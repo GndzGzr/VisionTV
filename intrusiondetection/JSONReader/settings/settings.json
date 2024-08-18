@@ -1,0 +1,67 @@
+{
+    "appsettings": {
+        "window_size": "800x600"
+    },
+    "camera": {
+        "capture": "C:/Users/gundu/Desktop/Yeni klas\u00f6r (2)/staj/perimeterIntrusionDetection/intrusiondetection/media/sources/SWIR0.mp4",
+        "create_output": true,
+        "set_zone": true
+    },
+    "zone": {
+        "edges": [
+            {
+                "x": 87,
+                "y": 164
+            },
+            {
+                "x": 382,
+                "y": 167
+            },
+            {
+                "x": 439,
+                "y": 311
+            },
+            {
+                "x": 328,
+                "y": 382
+            },
+            {
+                "x": 77,
+                "y": 389
+            }
+        ]
+    },
+    "method": {
+        "email_sent": false,
+        "displayZone": true,
+        "displayFPS": true
+    },
+    "system": {
+        "input_option": "Video",
+        "method": "Object Detection"
+    },
+    "objectdetection": {
+        "model": "yolov8n.pt"
+    },
+    "motiondetection": {
+        "cnt_filter": 500,
+        "gaussian_kernel": 3,
+        "closing_kernel": 3
+    },
+    "opticalflow": {
+        "min_thresh": 0.1,
+        "max_thresh": 1.0,
+        "kernel": 7,
+        "bbox_thresh": 400,
+        "nms_thresh": 0.1,
+        "gaussian_blur_kernel": 3,
+        "sigma": 5,
+        "pyr_scale": 0.75,
+        "levels": 3,
+        "winsize": 5,
+        "iterations": 3,
+        "poly_n": 10,
+        "poly_sigma": 1.2
+    },
+    "maskrcnn": {}
+}
